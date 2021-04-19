@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-family: "Raleway", sans-serif;
+}
+
+#showcase {
+    background-image: url('./resources/OneDrive-2021-04-06/images/DSC07654.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+    background-attachment: fixed;
+    overflow: hidden auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    margin: 6%;
+    display: grid;
+    grid-template-columns: 0.35fr 7fr 0.8fr 0.4fr;
+}
+
+#search svg, #menu svg {
+    width: 25px;
+}
+
+#logo-text {
+    font-size: 1.2rem;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    margin: 14.5% 6% 0 6%;
+}
+
+.overlay-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.overlay-content p {
+    line-height: 1.7rem;
+    max-width: 480px;
+}
+
+.overlay-cookie-message {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 3%;
+    background-color: #fff;
+    opacity: 1;
+    /* animation-name: cookie;
+    animation-duration: 3s;
+    animation-timing-function: linear; */
+    transition: all 1s linear;
+}
+
+/* @keyframes cookie {
+    0% {margin-left: 25%}
+    100% {margin-left: -50%;}
+} */
+
+.cookie-flex-container {
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cookie {
+    align-items: center;
+}
+
+.close-icon {
+    align-self: center;
+}
+
+.cookie-text {
+    align-self: center;
+}
+
+.cookie-text-line-1{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* Cookie styles finished */
+
+/* Showcase image 2 */
+#showcase2, #showcase3, #showcase4 {
+    background-image: url('./resources/External/dark-grey-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.showcase2-overlay, .showcase3-overlay, .showcase4-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+}
+
+.overlay2-content {
+    margin-top: 3%;
+}
+
+.overlay2-content p {
+    text-align: center;
+}
+
+.overlay2-grid {
+    display: grid;
+    grid-template-areas: 
+    'img1 img2' 
+    'img1 img3';
+    row-gap: 2%;
+    column-gap: 1.5%;
+    margin: 3% 17%;
+}
+
+.overlay2-grid div {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 6rem;
+}
+
+#img1, #img2, #img3 {
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: transform 1s ease;
+}
+
+#img1, #img2, #img3 > p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#img1 {
+    grid-area: img1;
+    background-image: url('./resources/OneDrive-2021-04-06/images/annie-spratt-iL0_UYjrKNg-unsplash.jpg');
+    background-position: center;
+    padding: 8rem;
+}
+
+#img2 {
+    grid-area: img2;
+    background-image: url('./resources/OneDrive-2021-04-06/images/sanket-shah-F_3qCaaSadc-unsplash.jpg');
+    background-position: unset;
+}
+
+#img3 {
+    grid-area: img3;
+    background-image: url('./resources/OneDrive-2021-04-06/images/20191010_044734771_iOS.jpg');
+    background-position: center;
+}
+
+
+/* Showcase3 styles / Overlay 3 */
+.overlay3-content {
+    margin-top: 12rem;
+}
+
+.showcase3-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    margin-left: 5%;
+}
+.list {
+    margin-right: 5%;
+}
+
+.list-items {
+    margin-top: -3rem;
+}
+
+#item5, #item4, #item3, #item2, #item1 {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+}
+
+#item5:hover, #item4:hover, #item3:hover, #item2:hover, #item1:hover {
+    color: #deb887;
+}
+
+/* Cards over one another */
+.child {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    top: 0;
+}
+  
+.child-1 {
+    left: 0;
+}
+
+.child-2 {
+    top: -1.5rem;
+    left: 1.5rem;
+    height: 23rem;
+}
+
+.child-3 {
+    top: -3rem;
+    left: 3rem;
+    height: 26rem;
+}
+
+.child-4 {
+    top: -4.5rem;
+    left: 4.5rem;
+    height: 29rem;
+}
+
+.child-5 {
+    top: -6rem;
+    left: 6rem;
+    height: 32rem;
+}
+
+.parent {
+    position: relative;
+}
+
+#child5, #child4, #child3, #child2, #child1, .my-image {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+#child5 {
+    background-image: url('./resources/OneDrive-2021-04-06/images/untitled+\(21+of+22\).jpg');
+}
+
+#child4 {
+    background-image: url('./resources/OneDrive-2021-04-06/images/Ess-y4qXYAEbmMW.jpg');
+}
+
+#child3 {
+    background-image: url('./resources/OneDrive-2021-04-06/images/rahul-ranjit-4Pmr__6Cme4-unsplash.jpg');
+}
+
+#child2 {
+    background-image: url('./resources/OneDrive-2021-04-06/images/photo-1478860409698-8707f313ee8b.jpg');
+}
+
+#child1 {
+    background-image: url('./resources/OneDrive-2021-04-06/images/Es_6nuNW4AQrq_a.jpg');
+}
+
+/* Overlay 4 */
+.overlay4-content {
+    margin-top: 12rem;
+}
+
+.showcase4-flex-container {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+}
+
+.lookout {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+
+.image-container {
+    border: 1px solid #000;
+    border-radius: 1rem;
+    height: 23rem;
+    width: 23rem;
+}
+
+.my-image {
+    background-image: url('./resources/OneDrive-2021-04-06/images/20210131_033940618_iOS.jpg');
+}
+
+.my-image:hover {
+    background-size: 140%;
+}
+
+/* Showcase 5 */
+.showcase5 {
+    margin-top: 4rem;
+    color: #000;
+    font-size: 1rem;
+}
+
+.showcase5 p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-decoration: underline;
+}
+
+.bio {
+    align-self: flex-start;
+    max-width: 400px;
+    font-weight: 600;
+}
+
+.news {
+    max-width: 300px;
+}
+
+.events {
+    max-width: 300px;
+}
+
+hr {
+    margin: 0 auto;
+    margin-top: 4rem;
+    border: 0.7px solid #000;
+    margin-bottom: 1rem;
+}
+
+#logo {
+    display: flex;
+}
+
+#social {
+    display: flex;
+}
+
+.footer-logo-text {
+    margin-left: 1rem; 
+}
+
+.social-item {
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+/* Managing Responsiveness */
+
+/* Handling showcase1 responsive styles */
+/* styling cookie and header */
+@media(min-width: 681px) and (max-width: 1000px) {
+    .cookie svg {
+        width: 80px;
+    }
+    .close-icon svg {
+        width: 20px;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1100px) {
+    .overlay-content {
+        margin-bottom: 8%;
+    }
+}
+@media(min-width: 850px) and (max-width: 1000px) {
+    .overlay-cookie-message {
+        max-width: 70%;
+    }
+    .overlay-content {
+        margin-bottom: 12%;
+    }
+}
+@media(min-width: 750px) and (max-width: 850px) {
+    .overlay-content {
+        margin-bottom: 17%;
+    }
+    .overlay-cookie-message {
+        max-width: 75%;
+    }
+}
+@media(min-width: 681px) and (max-width: 750px) {
+    .overlay-content {
+        margin-bottom: 20%;
+    }
+    .overlay-cookie-message {
+        width: 80%;
+    }
+}
+
+@media(min-width: 681px) and (max-width: 950px) {
+    #logo-text {
+        margin-left: 1rem;
+    }
+    #search {
+        margin-right: 4rem;
+    }    
+}
+
+@media(min-width: 1000px) {
+    .overlay-cookie-message {
+        max-width: 50%;
+    }
+    .cookie svg {
+        width: 80px;
+    }
+    .close-icon svg {
+        width: 20px;
+    }
+}
+
+/* Styling cookie message for smaller screens */
+
+@media(max-width: 680px) {
+    .overlay-cookie-message {
+        max-width: 92%;
+    }
+    .cookie-text-line-1{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    .cookie-text-line-2 {
+        font-size: 1rem;
+    }
+    .cookie {
+        margin: 0 6%;
+    }
+    .cookie svg {
+        width: 60px;
+    }
+    .close-icon svg {
+        width: 20px;
+    }
+    .close-icon {
+        margin-right: 2%;
+    }
+}
+
+
+/* Handling showcase2 responsive image grid */
+
+@media(min-width: 681px) and (max-width: 850px) {
+    .overlay2-content-p1  {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    #img1 {
+        padding: 6rem;
+    }
+    #img2, #img3 {
+        padding: 4.5rem;
+    }
+}
+
+@media(max-width: 850px) {
+    #img1 {
+        padding: 5rem;
+    }
+    #img2, #img3 {
+        padding: 3.5rem;
+    }
+}
+
+@media(max-width: 750px) {
+    #img1 {
+        padding: 4rem;
+    }
+    #img2, #img3 {
+        padding: 2.5rem;
+    }
+}
+
+@media(min-width: 680px) {
+    #img1 p {
+        margin-top: 50%;
+    }
+}
+
+/* Handling showcase5 responsive styles */
+@media(min-width: 681px) and (max-width: 812px) {
+    .bio {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(min-width: 681px) {
+    .showcase5-flex-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 10% 0 2%;
+    }
+    hr {
+        max-width: 90%;
+    }
+    .showcase5-flex-container2 {
+        margin: 0.5rem 5%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .showcase5 label {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+}
+
+/* Handling showcase4 responsive styles */
+@media(min-width: 680px) and (max-width: 850px) {
+    .image-container {
+        height: 18rem;
+        width: 18rem;
+    }
+}
+
+/* Handling showcase3 responsive styles */
+/* Hiding mobile showcase for larger screens */
+@media(min-width: 681px) {
+    #showcase3mobile {
+        display: none;
+    }
+}
+
+/* responsive styles based on screen widths instead of breakpoints */
+
+/* Handling mobile screens with max width of 680px */
+
+@media(max-width: 680px) {
+
+    /* Setting background image */
+    #showcase {
+        background-position: 20%;
+    }
+
+    /* showcase1 Heading styles */
+    #search {
+        display: none
+    }
+    #logo-text {
+        margin-left: 1rem;
+    }
+    .header {
+        margin: 10%;
+        grid-template-columns: 0.35fr 7fr 0.4fr;
+    }
+    .overlay-content {
+        margin: 30% 6% 0 6%;
+    }
+
+    /* Showcase 2 */
+
+    /* Note-- for device specific for eg. iphoneX, set img1 padding to 10rem, img2,img3 to 5rem */
+    #img1 {
+        padding: 6rem;
+        margin-top: 2rem;
+    }
+    #img2, #img3 {
+        padding: 3rem;
+    }
+    .overlay2-content-p1  {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .overlay2-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 17%;
+    }
+    .overlay2-grid div {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Showcase4 styles */
+    .showcase4-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4rem;
+    }
+    .image-container {
+        margin-top: 2rem;
+    }
+    .lookout {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+
+    /* Showacase3 styles */
+    #showcase3 {
+        display: none;
+    }
+    #showcase3mobile {
+        background-image: url('./resources/OneDrive-2021-04-06/images/untitled+\(21+of+22\).jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .showcase3mobile-overlay {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100vh;
+        width: 100%;
+    }
+    .showcase3mobile-overlay-content {
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+    #item5-m, #item4-m, #item3-m, #item2-m, #item1-m {
+        margin-left: 1rem;
+        line-height: 5rem;
+    }
+    #item5-m-sn, #item4-m-sn, #item3-m-sn, #item2-m-sn, #item1-m-sn {
+        margin-left: 2rem;
+    }
+
+    /* Showcase 5 styles */
+    .showcase5-flex-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+    }
+    .bio {
+        margin-bottom: 10%;
+    }
+    .events {
+        margin-top: 10%;
+    }
+    .showcase5 label {
+        margin-bottom: 6%;
+    }
+    hr {
+        max-width: 80%;
+    }
+    .showcase5-flex-container2 {
+        margin: 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    #logo {
+        margin: 10% 5%;
+    }
+}
+
+/* Styles for better performance device specific*/
+@media(max-width: 450px) {
+    .overlay-content h1 {
+        font-size: 1.8rem;
+        margin-top: 30%;
+        margin-bottom: 1.8rem;
+        padding: 0 3rem 0 1.5rem;
+        line-height: 2.5rem;
+    }
+    .overlay-content p {
+        line-height: 1.7rem;
+        padding: 0 1rem 0 1.5rem;
+    }
+    .overlay-content {
+        margin-bottom: 12%;
+    }
+    .overlay2-grid {
+        margin: 0;
+    }
+}
+
+/* Ipad styles */
+
+@media(min-height: 1000px) and (max-height: 1499px) {
+    #logo-text {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    .cookie-text-line-1 {
+        font-size: 0.8rem;
+    }
+
+    /* Showcase2 styles */
+    .overlay2-content-p1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .overlay2-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 17%;
+    }
+    .overlay2-grid div {
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .overlay-cookie-message {
+        max-width: 70%;
+    }
+}
+
+@media(min-height: 1000px) and (max-height: 1299px) {
+    .overlay-content h1 {
+        margin-top: 5rem;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .overlay-content p {
+        max-width: 600px;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-bottom: 7rem;
+    }
+}
+
+/* Ipad Pro styles */
+
+@media(min-height: 1300px) {
+    .overlay-content h1 {
+        margin-top: 10rem;
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .overlay-content p {
+        max-width: 600px;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin-bottom: 10rem;
+    }
+    .overlay3-content, .overlay4-content {
+        margin-top: 50%;
+    }
+}
+
+@media(min-height: 640px) and (max-height: 670px) {
+    .overlay-content h1 {
+        margin-top: 2rem;
+    }
+    .overlay-content p {
+        max-width: 400px;
+    }
+}
+
+@media(min-height: 560px) and (max-height: 580px) {
+    .overlay-content h1 {
+        margin-top: 0rem;
+        line-height: 2rem;
+    }
+    .overlay-content p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        max-width: 400px;
+    }
+}
+
+
+/* Testing out stuff */
+@media(min-width: 681px) and (max-width: 900px) {
+    .child {
+        height: 15rem;
+        width: 15rem;
+    }
+    .child-2 {
+        height: 18rem;
+    }
+    .child-3 {
+        height: 21rem;
+    }
+    .child-4 {
+        height: 24rem;
+    }
+    .child-5 {
+        height: 27rem;
+    }
+    .list-items {
+        margin-top: -6rem;
+    }
+    #item5, #item4, #item3, #item2, #item1 {
+        margin-left: 1rem;
+        font-size: 2rem;
+        line-height: 4.5rem;
+    }
+}
+
+@media(min-width: 901px) and (max-width: 1125px) {
+    .child {
+        height: 17.5rem;
+        width: 17.5rem;
+    }
+    .child-2 {
+        height: 20.5rem;
+    }
+    .child-3 {
+        height: 24.5rem;
+    }
+    .child-4 {
+        height: 27.5rem;
+    }
+    .child-5 {
+        height: 30.5rem;
+    }
+    .list-items {
+        margin-top: -4.5rem;
+    }
+    #item5, #item4, #item3, #item2, #item1 {
+        margin-left: 1rem;
+        font-size: 2.2rem;
+        line-height: 5rem;
+    }
+}
+
+@media(min-width: 901px) and (max-width: 1000px) {
+    .cards {
+        margin-left: 10%;
+    }
+    .list {
+        margin-right: 10%;
+    }
+}
+
+@media(min-width: 1001px) and (max-width: 1225px) {
+    .cards {
+        margin-left: 10%;
+    }
+    .list {
+        margin-right: 10%;
+    }
+}
+
+@media(min-width: 1226px){
+    .cards {
+        margin-left: 20%;
+    }
+    .list {
+        margin-right: 20%;
+    }
+}
